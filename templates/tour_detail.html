@@ -1,12 +1,12 @@
 {% extends '_base.html' %}
 {% load static %}
 {% block title %}
-{{ tour.title }}
+<h2>{{ tour.title }}</h2>
 {% endblock title %}
 
 {% block content %}
 <h2>{{ tour.title }}</h2>
 <img src="{{ tour.photo.url }}" alt="tour Photo">
 <p>{{ tour.description }}</p>
-<a href="{% url 'fill_form' tour.id %}">Fill Form</a>
+<a href="{% url 'tour_register' tour.id %}">Register</a>
 {% endblock content %}

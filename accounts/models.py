@@ -8,6 +8,6 @@ class CustomUser(AbstractUser):
     first_name = models.CharField(max_length = 200)
     last_name = models.CharField(max_length = 200)
     age = models.PositiveIntegerField(null=True, blank=True) 
-    nat_id = models.TextField(null=False, blank=False, default=0, max_length=10)
+    nat_id = models.CharField(null=False, blank=False, default=None, max_length=10)
     
     

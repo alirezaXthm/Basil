@@ -12,4 +12,4 @@ class TourForm(forms.ModelForm):
 class TourRegisterForm(forms.ModelForm):
     class Meta:
         model = CustomUser
-        fields = ('first_name', 'last_name', 'nat_id', 'age')
+        fields = ('first_name', 'last_name', 'nat_id', 'age', 'phone_number')
